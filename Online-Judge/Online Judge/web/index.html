@@ -127,6 +127,35 @@
             <!-- /navbar -->
         </div>
         <!-- /navigation -->
+
+        <!-- start slider -->
+        <div class="slider">
+            <div class="container">
+                <div id="owl-carousel" class="owl-carousel">
+                    <div class="content-area">
+                        <h2>Compete</h2>
+                        <p>Compete in various contests with other students and show your coding skills.</p>
+                        <a class="btn btn-outline-light btn-lg min-w-150" href="contest_problem.jsp">Go</a>
+                    </div>
+                    <div class="content-area">
+                        <h2>Practice</h2>
+                        <p>Code. Code. Code. Practice makes a man perfect.</p>
+                        <a class="btn btn-outline-light btn-lg min-w-150" href="contest_problem.jsp">Go</a>
+                    </div>
+                    <div class="content-area">
+                        <h2>Ranking</h2>
+                        <p>Check where do you stand with respect to other students.</p>
+                        <a class="btn btn-outline-light btn-lg min-w-150" href="current_rank.jsp">Go</a>
+                    </div>
+                    <div class="content-area">
+                        <h2>About Us</h2>
+                        <p></p>
+                        <a class="btn btn-outline-light btn-lg min-w-150" href="about.html">Go</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end slider -->
     </header>
     <!-- /header -->
     <!-- Site Main -->
@@ -283,6 +312,16 @@
 <!-- Custom JavaScript -->
 <script src="../web/js/owl.carousel.min.js"></script>
 <script src="../web/js/script.js"></script>
-
+<script>
+    (function ($) {
+        $(document).ready(function () {
+            $("#owl-carousel").owlCarousel({
+                items: 1,
+                center: true,
+                autoplay: true
+            });
+        });
+    })(jQuery);
+</script>
 </body>
 </html>
