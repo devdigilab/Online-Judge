@@ -6,13 +6,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 */
 @font-face {
     font-family: 'texgyreadventorregular';
-    src: url('../fonts/texgyreadventor-regular-webfont.ttf') format('truetype');
+    src: url('../font-awesome/texgyreadventor-regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
      font-family: 'open_sansregular';
-      src:url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype');
+      src:url('../font-awesome/OpenSans-Regular-webfont.ttf') format('truetype');
 }
 body {
 	font-family: 'open_sansregular';

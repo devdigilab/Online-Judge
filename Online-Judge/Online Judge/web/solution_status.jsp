@@ -27,7 +27,7 @@
         <script type="text/javascript" src="js/bootstrap.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <!----font-Awesome----->
-        <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
         <!----font-Awesome----->
 
     </head>

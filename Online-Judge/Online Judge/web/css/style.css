@@ -1,6 +1,64 @@
 /*
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
+Author: Devdigilab
 */
+
+.size-120 {
+    width: 120px;
+    height: 120px;
+}
+
+.dt-avatar:not([class*="size-"]), .dt-avatar__outline:not([class*="size-"]) {
+    width: 40px;
+    height: 40px;
+}
+
+.oj-avatar, .oj-avatar__outline {
+    border-radius: 50%;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    position: relative;
+    overflow: hidden;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+/* Header
+=================================================== */
+.oj-header {
+    position: relative;
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.oj-header:after {
+    /*content: '';*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.oj-header .navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Section
+=================================================== */
+.oj-main .oj-main-section {
+    padding: 50px 0;
+}
