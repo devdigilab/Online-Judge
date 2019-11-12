@@ -1,83 +1,274 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <title>About Us</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <!-- Bootstrap -->
-        <link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
-        <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-       <![endif]-->
-        <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/login_register.css" rel="stylesheet" type="text/css"/>
-        <!-- start plugins -->
-        <script type="text/javascript" src="js/jquery.min.js"></script>
-        <script type="text/javascript" src="js/bootstrap.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <!----font-Awesome----->
-        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-        <!----font-Awesome----->
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="Responsive, HTML5, admin theme, business, professional, jQuery, web design, CSS3">
+    <!-- /meta tags -->
+    <script type="application/x-javascript"> addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
 
-    </head>
-    <body>
-         <div class="header_bg1" id="styleBody">
-            <div class="container">
-                <div class="row header">
-                    <div class="logo navbar-left">
-                        <h1><a href="index.html">Learner </a></h1>
-                    </div>
-                    <div class="h_search navbar-right">
-                        
-                       
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="row h_menu">
-                    <nav class="navbar navbar-default navbar-left" role="navigation">
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                        </div>
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav">
-                                <li><a href="index1.jsp">Home</a></li>
-                                <li ><a href="contest_problem.jsp">Compete</a></li>
-                                <li class="active"><a href="about.html">About Us</a></li>
-                                <li ><a href="contest_problem.jsp">Practice</a></li>
-                                <li><a href="current_rank.jsp">Ranking</a></li>
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    } </script>
+    <title>Code Judge | Home</title>
+
+    <!-- Site favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <!-- /site favicon -->
+
+    <!-- Load Styles -->
+    <link rel="stylesheet" href="../web/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../web/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../web/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../web/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../web/css/style.css">
+    <!-- /load styles -->
+
+</head>
+<body>
+
+<!-- Root -->
+<div class="site-root">
+    <!-- Header -->
+    <header class="site-header">
+        <!-- Navigation -->
+        <div class="navigation">
+            <!-- Top bar -->
+            <div class="site-topbar">
+                <div class="container">
+                    <div class="site-topbar-inner">
+                        <div class="topbar-left">
+                            <ul class="cj-list cj-list-xl cj-list-cm-0">
+                                <li class="cj-list__item">
+                                    <a href="tel:+19142683652">
+                                        <i class="fa fa-phone"></i>
+                                        +1 914 268 3652
+                                    </a>
+                                </li>
+                                <li class="cj-list__item">
+                                    <a href="mailto:contact@mycomp.com?Subject=Hello%20again" target="_top">
+                                        <i class="fa fa-envelope"></i>
+                                        contact@mycomp.com
+                                    </a>
+                                </li>
                             </ul>
-                        </div><!-- /.navbar-collapse -->
-                        <!-- start soc_icons -->
-                    </nav>
+                        </div>
 
+                        <div class="topbar-right">
+                            <!-- List -->
+                            <ul class="cj-list cj-list-cm-0">
+                                <li class="cj-list__item">
+                                    <a href="login.html">Login</a>
+                                </li>
+                                <li class="cj-list__item">
+                                    <a href="login.html">Signup</a>
+                                </li>
+                            </ul>
+                            <!-- /list -->
+
+                            <!-- List -->
+                            <ul class="cj-list cj-list-cm-0">
+                                <li class="cj-list__item">
+                                    <a class="twitter-icon" href="javascript:void(0)">
+                                        <i class="fa fa-twitter-square fa-lg"></i>
+                                    </a>
+                                </li>
+
+                                <li class="cj-list__item">
+                                    <a class="facebook-icon" href="javascript:void(0)">
+                                        <i class="fa fa-facebook-square fa-lg"></i>
+                                    </a>
+                                </li>
+
+                                <li class="cj-list__item">
+                                    <a class="linkedin-icon" href="javascript:void(0)">
+                                        <i class="fa fa-linkedin-square fa-lg"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- /list -->
+                        </div>
+                    </div>
                 </div>
-                <div class="clearfix"></div>
+            </div>
+            <!-- /top bar -->
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <!-- Container -->
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggle-menu"
+                            aria-controls="toggle-menu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="toggle-menu">
+                        <a class="navbar-brand" href="#">Code Judge</a>
+                        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contest_problem.jsp">Compete</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contest_problem.jsp">Practice</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="current_rank.jsp">Ranking</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Language Learner</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /container -->
+            </nav>
+            <!-- /navbar -->
+        </div>
+        <!-- /navigation -->
+
+        <!-- start slider -->
+        <div class="slider">
+            <div class="container">
+                <div id="owl-carousel" class="owl-carousel">
+                    <div class="content-area">
+                        <h2>Compete</h2>
+                        <p>Compete in various contests with other students and show your coding skills.</p>
+                        <a class="btn btn-outline-light btn-lg min-w-150" href="contest_problem.jsp">Go</a>
+                    </div>
+                    <div class="content-area">
+                        <h2>Practice</h2>
+                        <p>Code. Code. Code. Practice makes a man perfect.</p>
+                        <a class="btn btn-outline-light btn-lg min-w-150" href="contest_problem.jsp">Go</a>
+                    </div>
+                    <div class="content-area">
+                        <h2>Ranking</h2>
+                        <p>Check where do you stand with respect to other students.</p>
+                        <a class="btn btn-outline-light btn-lg min-w-150" href="current_rank.jsp">Go</a>
+                    </div>
+                    <div class="content-area">
+                        <h2>About Us</h2>
+                        <p></p>
+                        <a class="btn btn-outline-light btn-lg min-w-150" href="about.html">Go</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <br>
-        <br>
-        
-        <p style="padding: 50px">Online judge is a website to host online programming contests.It will provide our college students suitable platform to brush up their coding skills. The website will also act as a Question and Answers (Q & A) discussion forum wherein students of the college can interact with other students, alumni and faculty to discuss their problems and receive answers for their queries. The website will act as a question bank of various topics such as data structures and algorithms which will help the students in their coursework and placements.</p>
+        <!-- end slider -->
+    </header>
+    <!-- /header -->
+    <!-- Site Main -->
+    <main class="site-main">
+        <!-- Section -->
+        <section class="cj-main-section bg-light">
+            <!-- Container -->
+            <div class="container">
+                <p class="lead">
+                    Online judge is a website to host online programming contests.It will provide our college students
+                    suitable platform to brush up their coding skills. The website will also act as a Question and
+                    Answers (Q & A) discussion forum wherein students of the college can interact with other students,
+                    alumni and faculty to discuss their problems and receive answers for their queries. The website will
+                    act as a question bank of various topics such as data structures and algorithms which will help the
+                    students in their coursework and placements.
+                </p>
+            </div>
+            <!-- /container -->
+        </section>
+        <!-- /section -->
+    </main>
+    <!-- /site main -->
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-8 col-xs-12">
+                    <div class="footer-wrapper">
+                        <div class="footer-logo">
+                            <a href="index.html">Code Judge</a>
+                        </div>
 
-        <br>
-        <br>
-        <br>
-    </body>
+                        <div class="site-description">
+                            <p>We are pleased to tell that we have been being most trustworthy to our customers and
+                                that's the reason they don’t leave us.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="footer-wrapper">
+                        <h5 class="footer-heading">Important Links</h5>
+
+                        <div class="row">
+                            <div class="col-sm-6 col-xs-12">
+                                <ul class="footer-menu">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="contest_problem.jsp">Compete</a></li>
+                                    <li><a href="contest_problem.jsp">Practice</a></li>
+                                    <li><a href="current_rank.jsp">Ranking</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-sm-6 col-xs-12">
+                                <ul class="footer-menu">
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="#">Language Learner</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="footer-wrapper">
+                        <h4 class="footer-heading">stay tuned with latests</h4>
+
+                        <form action="login.html" class="footer-form" method="post">
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Name" type="text">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Email" type="email">
+                            </div>
+                            <button class="btn btn-outline-light" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <p>Copyright © 2019 All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- /footer -->
+</div>
+<!-- /root -->
+
+<!-- Optional JavaScript -->
+<script src="../web/js/jquery.min.js"></script>
+<script src="../web/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JavaScript -->
+<script src="../web/js/owl.carousel.min.js"></script>
+<script src="../web/js/script.js"></script>
+<script>
+    (function ($) {
+        $(document).ready(function () {
+            $("#owl-carousel").owlCarousel({
+                items: 1,
+                center: true,
+                autoplay: true,
+                loop: true
+            });
+        });
+    })(jQuery);
+</script>
+</body>
 </html>

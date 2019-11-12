@@ -1,178 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="Responsive, HTML5, admin theme, business, professional, jQuery, web design, CSS3">
+    <!-- /meta tags -->
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <title>Code Judge | Login</title>
 
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <title>Compete</title>
-        <!-- Bootstrap -->
-        <link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
-        <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-       <![endif]-->
-        <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/login_register.css" rel="stylesheet" type="text/css"/>
-        <!-- start plugins -->
-        <script type="text/javascript" src="js/jquery.min.js"></script>
-        <script type="text/javascript" src="js/bootstrap.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <!----font-Awesome----->
-        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-        <!----font-Awesome----->
-    </head>
-    <body>
-        <div class="header_bg1">
-            <div class="container">
-                <div class="row header">
-                    <div class="logo navbar-left">
-                        <h1><a href="index.html">Learner </a></h1>
-                    </div>
-                    <div class="h_search navbar-right">
-                        
-                    </div>
-                    <div class="clearfix"></div>
+    <!-- Site favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <!-- /site favicon -->
+
+    <!-- Load Styles -->
+    <link rel="stylesheet" href="../web/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../web/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../web/css/style.css">
+    <!-- /load styles -->
+
+</head>
+<body>
+
+<!-- Root -->
+<div class="site-root login-page">
+    <!-- Site Main -->
+    <main class="site-main">
+        <!-- Card -->
+        <div class="card login-card">
+            <!-- Card Body -->
+            <div class="card-body px-4 py-5">
+                <div class="text-center mb-5">
+                    <h2>Login or Create a Account!</h2>
                 </div>
-                <div class="row h_menu">
-                    <nav class="navbar navbar-default navbar-left" role="navigation">
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
+                <!-- Grid -->
+                <div class="row">
+                    <!-- Grid item -->
+                    <div class="col-xl-6">
+                        <!-- Form -->
+                        <form name="register_form" action="register" method="post">
+                            <div class="form-group">
+                                <label for="inputName">Name</label>
+                                <input type="text"
+                                       class="form-control"
+                                       id="inputName"
+                                       placeholder="Enter Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail">Email address</label>
+                                <input type="email"
+                                       class="form-control"
+                                       id="inputEmail"
+                                       placeholder="Enter email" required>
+                                <small class="form-text text-muted">
+                                    We'll never share your email with anyone else.
+                                </small>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword">Password</label>
+                                <input type="password"
+                                       class="form-control"
+                                       id="inputPassword"
+                                       placeholder="Password" required>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <select name="branch" class="custom-select">
+                                            <option selected>Select Branch</option>
+                                            <option value="1">CSE</option>
+                                            <option value="2">ME</option>
+                                            <option value="3">CE</option>
+                                            <option value="3">ECE</option>
+                                            <option value="3">EE</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="form-group">
+                                        <select name="year" class="custom-select">
+                                            <option selected>Select Year</option>
+                                            <option value="1">I</option>
+                                            <option value="2">II</option>
+                                            <option value="3">III</option>
+                                            <option value="3">IV</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" onclick="return validateFormFields()">
+                                Create Account
                             </button>
-                        </div>
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav">
-                                <li><a href="index1.jsp">Home</a></li>
-                                <li><a href="contest_problem.jsp">Compete</a></li>
-                                <li><a href="contest_problem.jsp">Practice</a></li>
-                                <li><a href="current_rank.jsp">Ranking</a></li>
-                                <li><a href="about.html">About Us</a></li>
-                            </ul>
-                        </div><!-- /.navbar-collapse -->
-                        <!-- start soc_icons -->
-                    </nav>
+                        </form>
+                        <!-- /form -->
+                    </div>
+                    <!-- /grid item -->
+                    <!-- Grid item -->
+                    <div class="col-xl-6">
+                        <!-- Form -->
+                        <form action="user_auth" method="post">
+                            <div class="form-group">
+                                <label for="inputEmail1">Email address</label>
+                                <input type="email"
+                                       class="form-control"
+                                       id="inputEmail1"
+                                       placeholder="Enter email" required>
+                                <small class="form-text text-muted">
+                                    We'll never share your email with anyone else.
+                                </small>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword1">Password</label>
+                                <input type="password"
+                                       class="form-control"
+                                       id="inputPassword1"
+                                       placeholder="Password" required>
+                            </div>
 
+                            <div class="form-group">
+                                <span onclick="forgotPassword()"><a href="#">I forgot my Password!</a></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Login</button>
+                        </form>
+                        <!-- /form -->
+                    </div>
                 </div>
-                <div class="clearfix"></div>
+                <!-- /grid -->
             </div>
+            <!-- /card body -->
         </div>
+        <!-- /card -->
+    </main>
+    <!-- /site main -->
+</div>
+<!-- /root -->
 
+<!-- Optional JavaScript -->
+<script src="../web/js/jquery.min.js"></script>
+<script src="../web/js/bootstrap.bundle.min.js"></script>
 
+<!-- Custom JavaScript -->
+<script src="../web/js/script.js"></script>
+<script>
+    function validateFormFields() {
+        var email = new String(document.register_form.email.value);
+        var password = document.register_form.pass.value;
+        var atIndex = email.indexOf("@");
+        var dotIndex = email.indexOf(".");
+        if (atIndex < 1 || (dotIndex - atIndex) < 2) {
+            document.getElementById("errorMsg").innerHTML = "Invalid Email";
+            return false;
+        }
 
-        <div class="main">
-            <div class="header" >
-                <h1>Login or Create a Account!</h1>
-            </div>
+        if (password.length < 8) {
+            document.getElementById("errorMsg").innerHTML = "Password must be of 8 characters or more";
+            return false;
+        }
+        return true;
+    }
 
-            <form name="register_form" action="register" method="POST">
-                <ul class="left-form">
-                    <h2>New Account:</h2>
-
-                    
-                    <li>
-                        <input type="text"   placeholder="Email" name="email" required/><div style="color: red">*</div>
-                        <div class="clear"> </div>
-                    </li> 
-                     <li>
-                        <input type="text"   placeholder="Name" name="name" required/><div style="color: red">*</div>
-                        <div class="clear"> </div>
-                    </li> 
-                    <div style="padding: 10px">
-                        Branch :  <select name="branch">
-                            <option>CSE</option>
-                            <option>ME</option>
-                            <option>CE</option>
-                            <option>ECE</option>
-                            <option>EE</option>
-                        </select>
-                    </div>
-                    <div style="padding: 10px">
-                        Year :  <select name="year">
-                            <option>I</option>
-                            <option>II</option>
-                            <option>III</option>
-                            <option>IV</option>
-                            
-                        </select>
-                    </div>
-                    <li>
-                        <input type="password"   placeholder="password" name="pass" required/><div style="color: red">*</div>
-                        <div class="clear"> </div>
-                    </li> 
-                    
-                    <p id="errorMsg" style="color: red"></p>
-                   
-
-                    <input type="submit" onclick="return validateFormFiels()" value="Create Account">
-                    <div class="clear"> </div>
-                </ul>
-                </form>
-            <form action="user_auth" method="post">
-                <ul class="right-form">
-                    <h3>Login:</h3>
-                    <div >
-                        <li><input type="text" name="email" placeholder="Email" required/></li>
-                        <li> <input type="password" name="pass" placeholder="Password"  required/></li>
-                        <h4 onclick="forgotPassword()"><a href="#">I forgot my Password!</a></h4>
-                        <input type="submit"  value="Login" >
-                    </div>
-                    <div class="clear"> </div>
-                </ul>
-                </form>
-                <div class="clear"> </div>
-
-
-        </div>
-
-
-        <div class="main_bg"><!-- start main -->
-            <div class="container">
-                <div class="about details row">
-
-                </div>
-            </div><!-- end main -->
-
-            <div class="footer_bg"><!-- start footer -->
-                <div class="container">
-                    <div class="row  footer">
-                        <div class="copy text-center">
-                            <p class="link"><span>&#169; All rights reserved </span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <script >
-            
-            function validateFormFiels(){
-                var email = new String(document.register_form.email.value);
-                var password = document.register_form.pass.value;
-                var atIndex = email.indexOf("@");
-                var dotIndex = email.indexOf(".");
-                if(atIndex < 1 || (dotIndex - atIndex) < 2){
-                    document.getElementById("errorMsg").innerHTML = "Invalid Email"
-                    return false;
-                }
-                
-                if(password.length < 8){
-                    document.getElementById("errorMsg").innerHTML = "Password must be of 8 characters or more";
-                    return false;
-                }
-                return true;
-            }
-            
-            function forgotPassword(){
-                
-                alert("Password will be sent to your registered email");
-            }
-            
-            
-            </script>
-    </body>
+    function forgotPassword() {
+        alert("Password will be sent to your registered email");
+    }
+</script>
+</body>
 </html>
