@@ -2,17 +2,24 @@
 Author: Devdigilab
 */
 
+
+/* Global classes
+=================================================== */
+.min-w-150 {
+    min-width: 150px;
+}
+
 .size-120 {
     width: 120px;
     height: 120px;
 }
 
-.dt-avatar:not([class*="size-"]), .dt-avatar__outline:not([class*="size-"]) {
+.cj-avatar:not([class*="size-"]), .cj-avatar__outline:not([class*="size-"]) {
     width: 40px;
     height: 40px;
 }
 
-.oj-avatar, .oj-avatar__outline {
+.cj-avatar, .cj-avatar__outline {
     border-radius: 50%;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -35,7 +42,7 @@ Author: Devdigilab
 
 /* Header
 =================================================== */
-.oj-header {
+.site-header {
     position: relative;
     background-image: url("../images/banner.jpg");
     background-size: cover;
@@ -43,7 +50,7 @@ Author: Devdigilab
     height: 100vh;
 }
 
-.oj-header:after {
+.site-header:after {
     /*content: '';*/
     position: absolute;
     top: 0;
@@ -53,12 +60,121 @@ Author: Devdigilab
     background-color: rgba(0, 0, 0, 0.25);
 }
 
-.oj-header .navbar {
+.site-header .navbar {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Section
 =================================================== */
-.oj-main .oj-main-section {
+.site-main .cj-main-section {
     padding: 50px 0;
+}
+
+/* Card Style
+=================================================== */
+.card-wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 0 none;
+    box-shadow: 0 8px 16px rgba(192, 192, 192, 0.5);
+}
+
+/* Footer
+   ========================================================================== */
+.site-footer {
+    background-color: #010518;
+    color: #fff;
+    padding: 40px 0 25px;
+}
+
+.site-footer .footer-logo {
+    margin-bottom: 30px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.site-footer .footer-logo a {
+    color: #fff;
+}
+
+.site-footer .footer-logo a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-heading {
+    margin-bottom: 16px;
+    display: inline-block;
+    color: #fff;
+    font-weight: 400;
+    text-transform: capitalize;
+
+}
+
+.footer-heading:after {
+    background: #ccc none repeat scroll 0 0;
+    content: "";
+    display: block;
+    height: 2px;
+    margin-top: 8px;
+    width: 30px;
+    transition: all 0.3s ease 50ms;
+}
+
+.footer-wrapper:hover .footer-heading:after,
+.footer-wrapper:focus .footer-heading:after {
+    width: 100%;
+}
+
+.footer-menu {
+    list-style: outside none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.footer-menu li {
+    margin-bottom: 8px;
+}
+.footer-menu a {
+    display: inline-block;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.footer-form .form-control {
+    background-color: transparent;
+    color: #fff;
+    width: auto;
+    transition: all 0.3s ease 50ms;
+}
+
+.footer-form .form-control:focus {
+    box-shadow: none;
+    background-color: #fff;
+    color: #212529;
+}
+
+@media screen and (max-width: 991px) {
+    .footer-wrapper {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .site-footer {
+        text-align: center;
+    }
+
+    .footer-form .form-control {
+        margin: 0 auto;
+    }
+
+    .footer-heading:after {
+        margin: 8px auto 0;
+    }
 }
