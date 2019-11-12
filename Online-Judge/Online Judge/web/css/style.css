@@ -40,28 +40,146 @@ Author: Devdigilab
     -ms-user-select: none;
 }
 
+.cj-list {
+    list-style: none;
+    padding-left: 0;
+    margin-left: -7px;
+    margin-right: -7px;
+    margin-bottom: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.cj-list-xs {
+    margin-left: -0.5px;
+    margin-right: -0.5px;
+}
+
+.cj-list-xs > .cj-list__item {
+    padding-left: 0.5px;
+    padding-right: 0.5px;
+    margin-bottom: 1px;
+}
+
+.cj-list-sm {
+    margin-left: -3px;
+    margin-right: -3px;
+}
+
+.cj-list-sm > .cj-list__item {
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-bottom: 6px;
+}
+
+.cj-list-xl {
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.cj-list-xl > .cj-list__item {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.cj-list-xxl {
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.cj-list-xxl > .cj-list__item {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.cj-list__item {
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-bottom: 14px;
+}
+
+.cj-list-bordered .cj-list__item:not(:last-child) {
+    border-right: 1px solid #ddd;
+}
+
+.cj-list-col-6 .cj-list__item {
+    width: 50%;
+}
+
+.cj-list-col-6 .cj-list__item:nth-last-of-type(1),
+.cj-list-col-6 .cj-list__item:nth-last-of-type(2) {
+    margin-bottom: 0;
+}
+
+.cj-list-col-4 .cj-list__item {
+    width: 33.333%;
+}
+
+.cj-list-col-4 .cj-list__item:nth-last-of-type(1),
+.cj-list-col-4 .cj-list__item:nth-last-of-type(2),
+.cj-list-col-4 .cj-list__item:nth-last-of-type(3) {
+    margin-bottom: 0;
+}
+
+.cj-list-cm-0 .cj-list__item {
+    margin-bottom: 0;
+}
+
+.cj-list-square {
+    list-style-type: square;
+}
+
+/* Top bar
+=================================================== */
+.site-topbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 48px;
+}
+
+.site-topbar a {
+    color: #fff;
+}
+
+.site-topbar-inner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    height: 48px;
+}
+
+.site-topbar .cj-list + .cj-list {
+    margin-left: 40px;
+}
+
+.topbar-right {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
 /* Header
 =================================================== */
 .site-header {
     position: relative;
-    background-image: url("../images/banner.jpg");
+    background-image: url("../images/banner-2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
 }
 
-.site-header:after {
-    /*content: '';*/
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.25);
-}
-
 .site-header .navbar {
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.site-header .navbar-brand {
+    font-weight: bold;
 }
 
 /* Section
@@ -140,6 +258,7 @@ Author: Devdigilab
 .footer-menu li {
     margin-bottom: 8px;
 }
+
 .footer-menu a {
     display: inline-block;
     color: #fff;
