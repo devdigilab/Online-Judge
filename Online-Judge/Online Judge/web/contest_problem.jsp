@@ -1,7 +1,5 @@
 <%-- 
-    Document   : contest_problem
-    Created on : 7 Apr, 2015, 1:38:41 PM
-    Author     : akash
+
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

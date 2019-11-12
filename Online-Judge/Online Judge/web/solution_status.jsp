@@ -1,7 +1,5 @@
 <%-- 
-    Document   : solution_status
-    Created on : 13 Apr, 2015, 5:59:58 PM
-    Author     : akash
+
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

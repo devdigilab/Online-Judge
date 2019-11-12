@@ -1,7 +1,4 @@
-<%-- 
-    Document   : logout
-    Created on : 12 Apr, 2015, 11:48:48 AM
-    Author     : akash
+<%--
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

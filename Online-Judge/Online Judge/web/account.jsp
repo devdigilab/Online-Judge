@@ -1,6 +1,5 @@
 <%-- 
-    Document   : account
-    Author     : jatin songara
+
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

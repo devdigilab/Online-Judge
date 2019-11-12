@@ -1,7 +1,5 @@
 <%-- 
-    Document   : timer.jsp
-    Created on : 12 Apr, 2015, 3:01:16 PM
-    Author     : akash
+
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

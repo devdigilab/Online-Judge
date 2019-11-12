@@ -1,7 +1,5 @@
 <%-- 
-    Document   : index1
-    Created on : 12 Apr, 2015, 10:36:06 AM
-    Author     : akash
+
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

@@ -1,7 +1,5 @@
 <%-- 
-    Document   : current_rank
-    Created on : 13 Apr, 2015, 9:42:03 PM
-    Author     : akash
+
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
